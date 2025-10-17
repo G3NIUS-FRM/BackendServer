@@ -1,1 +1,12 @@
+# Entorno virtual
+venv/
+__pycache__/
+
+# Configuración sensible
 .env
+
+# Logs
+*.log
+
+# Archivos compilados
+*.pyc
