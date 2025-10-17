@@ -29,11 +29,8 @@ def sendEmail(message, receiver):
 @app.route('/sendEmail', methods=['POST'])
 def send():
     data=request.get_json()
-    
     sendEmail(data, 'adrianxramirez980@gmail.com')
-    
     message = {'message': 'El correo se ha enviado correctamente'}
-    
     return jsonify(message)
 
 if __name__ == '__main__':
